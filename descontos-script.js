@@ -1,0 +1,3 @@
+for (var i = 0; i < productsjson.length; ++i) {
+	$('#result4').append('<div class="product"><div class="top-part"><div class="product-title">' + productsjson[i]['nome_produtoING'] + '</div><div class="product-image"><img src="' + productsjson[i]['imagem'] + '" alt="' + productsjson[i]['nome_produtoING'] + '"></div></div><div class="bottom-part"><div class="price"><p class="titulo">Preco</p><p>' + productsjson[i]['preco'] + '</p></div><div class="percentage"><p class="titulo">Desconto</p><p>' + productsjson[i]['porcentagem'] + '</p></div><a class="link" href="' + productsjson[i]['urlING'] + '"><p>VEJA NO DX</p></a></div></div>');
+}

@@ -1,96 +1,64 @@
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+.product {
+  max-width: 20em;
+  border: 2px solid gray;
+  max-height: 20em;
+  margin: 1em;
+  height: 20em;
 }
-
-body {
-  color: #211f1e;
-  height: 100%;
+.top-part {
+  height: 80%;
 }
-
-.main {
-  height: 100%;
-}
-
-.container {
-  position: relative;
-  padding-top: 100px;
-  min-height: 100%;
-}
-
-h1 {
-  font-family: "HelveticaNeue-UltraLight", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 80px;
-  font-weight: normal;
-  margin: 0;
-  text-align: right;
-}
-
-h2 {
-  border-top: 1px solid #211f1e;
-  font-size: 24px;
-  font-weight: bold;
-  margin: 10px 0 40px 0;
-  padding: 30px 0 0 0;
-  text-align: right;
-}
-
-.day {
-  cursor: pointer;
-}
-
-.day > div {
-  line-height: 48px;
-}
-
-.weekday span {
-  font-size: 10px;
-}
-
-.weekday p {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.weather img {
-  width: 48px;
-}
-
-.high p,
-.low p,
-.hourly .temp {
-  font-size: 16px;
-}
-
-.hourly {
+.product-title {
   text-align: center;
-  display: none;
 }
-
-.hourly .hour {
-  font-weight: bold;
-  font-size: 16px;
+.product-image {
+  text-align: center;
 }
-
-.hourly img {
-  width: 24px;
+.product-image img {
+  max-width: 70%;
 }
-
-.hourly p {
-  margin: 16px 0;
+.bottom-part {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-
-.last {
-  margin-bottom: 100px;
+.bottom-part div {
+  text-align: center;
 }
-
-@media (max-width: 720px) {
-  .container {
-    background: rgba(255,255,255,0.8);
-  }
+.titulo {
+  top: 0;
+  text-transform: uppercase;
+  margin: 0.1em;
+  height: 20%;
+  color: white;
 }
-
-
+.old-price {
+  top: 0;
+  flex: none;
+  height: 50%;
+  width: 35%;
+}
+.price {
+  height: 100%;
+  width: 35%;
+  flex: none;
+  background-color: rgba(255, 148, 77, 0.5);
+}
+.percentage {
+  display: inline-block;
+  height: 100%;
+  flex: none;
+  width: 25%;
+  background-color: rgba(255, 51, 51, 0.5);
+}
+.link {
+  display: inline-block;
+  height: 100%;
+  flex: none;
+  width: 40%;
+  text-align: center;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
+  text-decoration: none;
+}
